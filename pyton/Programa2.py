@@ -10,3 +10,5 @@ print("Entero = ", entero)
 print("Cadena = ", cadena)
 print("flotante =", flotante)
 print("Booleano =", booleano)
+
+#en estos programas las similitudes son bastantes o casi iguales con sus pequeñas diferencias 
