@@ -25,7 +25,7 @@ while True:
         print(f"✅ producto '{producto4}' agregado.")
 
     elif opcion == "2":
-        print("arriba el pri")
+        print("saliendo del programa")
         break
 
     else:
