@@ -9,7 +9,7 @@ accesorios = {
     "0004": {"producto": "audifonos genericos", "presio":60, "existencias" : 132},
     "0005": {"producto": "bateris recargables", "presio":120, "existencias" : 50},
     "0006": {"producto": "baterias", "presio":12, "existencias" : 12},
-    "0007": {"producto": "botella de agua", "presio":6000, "existencias" : 20},
+    "0007": {"producto": "botella de agua", "presio":12, "existencias" : 200},
 }
 
 juegos = {
@@ -48,7 +48,7 @@ while True:
             print(f"{codigo}: {producto['producto']} - ${producto['presio']} | Existencias: {producto['existencias']}")
 
     elif opcion == "3":
-        codigo = input("Ingrese el código del producto: ").upper()
+        codigo = input("Ingrese el código del producto: ")
         producto_encontrado = False
         
         for tienda in [juegos, accesorios]:
@@ -89,7 +89,7 @@ while True:
             print("El carrito está vacío")
             continue
             
-        codigo = input("Ingrese el código del producto: ").upper()
+        codigo = input("Ingrese el código del producto: ")
         for item in carrito_de_compras:
             if item["codigo"] == codigo:
                 cantidad = int(input("Cantidad a eliminar: "))
