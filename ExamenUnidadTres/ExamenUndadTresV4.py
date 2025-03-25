@@ -1,7 +1,9 @@
-
-    import datetime
+from Archivos import guardar_diccionarios_en_csv, leer_diccionarios_de_csv
+import datetime
 import random
+import os 
 
+archivo = "almacen"
 # Diccionarios de productos
 accesorios = {
     "0001": {"producto": "s44+", "presio":15000, "existencias" : 5},
@@ -23,6 +25,7 @@ juegos = {
     "0014": {"producto": "mario partie", "presio":1500, "existencias" : 10},
     "0015": {"producto": "skyrim", "presio":300, "existencias" : 2},
 }
+guardar_diccionarios_en_csv(archivo, juegos, accesorios)
 
 carrito_de_compras = []
 
@@ -147,3 +150,4 @@ while True:
         
     else:
         print("Opción inválida. Intenta de nuevo.")
+
