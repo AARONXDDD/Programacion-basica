@@ -3,7 +3,7 @@ import datetime
 import random
 import os 
 
-archivo = "almacen"
+archivo = "almacen.csv"
 # Diccionarios de productos
 accesorios = {
     "0001": {"producto": "s44+", "presio":15000, "existencias" : 5},
@@ -25,7 +25,8 @@ juegos = {
     "0014": {"producto": "mario partie", "presio":1500, "existencias" : 10},
     "0015": {"producto": "skyrim", "presio":300, "existencias" : 2},
 }
-guardar_diccionarios_en_csv(archivo, juegos, accesorios)
+guardar_diccionarios_en_csv( juegos, accesorios)
+leer_diccionarios_de_csv ()
 
 carrito_de_compras = []
 
@@ -68,7 +69,7 @@ while True:
                             encontrado = True
                             break
                     
-                    if not encontrado:
+-                    if not encontrado:
                         carrito_de_compras.append({
                             "codigo": codigo,
                             "cantidad": cantidad,

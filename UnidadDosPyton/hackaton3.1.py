@@ -35,5 +35,6 @@ while True:
     print("\n Tu lista del mando  es:")
     for producto in lista_del_mandado:
         print(f"- {producto}")
+        
 
    
