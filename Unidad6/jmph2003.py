@@ -1,0 +1,6 @@
+NP = input("Nombre el programa: ")
+print("Iniciando:", NP)
+texto = input("Escribe una frase: ")
+ph = texto.split()
+palabras = len(ph)
+print("El texto contiene", palabras, "palabras.")
